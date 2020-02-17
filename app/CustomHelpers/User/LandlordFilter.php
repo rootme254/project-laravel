@@ -22,7 +22,10 @@ class LandlordFilter
             return Landlord::orderBy( $sortField)->get();
             
           }
-
+        /*
+        * did it this way coz there were no other criterie for filtering except 
+        with the id ,ie in migrations only id and timestamp
+        */
             return Landlord::all();
      }
 
